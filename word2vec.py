@@ -8,10 +8,12 @@ import pandas as pd
 
 
 def main():
+	#input file
+	filename = "THELONBOXHEALTHLAWS.txt"
 
 	# opens the file you want
 	print("loading file and getting contents...")
-	textfile = open("./THELONBOXHEALTHLAWS.txt", 'r')
+	textfile = open("./" + filename, 'r')
 
 	#get contents in an array
 	contents = getWordArray(textfile)
@@ -68,7 +70,7 @@ def main():
 
 	outputFile.close()	
 
-
+	input('\nprogram completed. press enter to quit:')
 
 def getWordArray(file):
 	#reads the contents into a variable
